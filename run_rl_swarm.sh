@@ -55,6 +55,18 @@ cleanup() {
 
 trap cleanup EXIT
 
+echo -e "\033[38;5;224m"
+cat << "EOF"
+    ██████  ██            ███████ ██     ██  █████  ██████  ███    ███ 
+    ██   ██ ██            ██      ██     ██ ██   ██ ██   ██ ████  ████ 
+    ██████  ██      █████ ███████ ██  █  ██ ███████ ██████  ██ ████ ██ 
+    ██   ██ ██                 ██ ██ ███ ██ ██   ██ ██   ██ ██  ██  ██ 
+    ██   ██ ███████       ███████  ███ ███  ██   ██ ██   ██ ██      ██ 
+    
+    From Gensyn  
+                                                                
+EOF
+
 while true; do
     echo -en $GREEN_TEXT
     read -p ">> Would you like to connect to the Testnet? [Y/n] " yn

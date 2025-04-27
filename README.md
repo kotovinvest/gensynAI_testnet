@@ -92,6 +92,7 @@ Therefore, you should do these actions in the following scenarios
 
 ## Troubleshooting
 
+- **My peer 'skipped a round'**: this occurs when your device isn't fast enough to keep up with the pace of the swarm. For example, if you start training at round 100 and by the time you finish training the rest of the swarm reaches round 102, you will skip round 101 and go straight to 102. This is because your peer is more valuable if it is participating in the active round.
 - **My model doesn't seem to be training?**
 
     - If you're using a consumer device (e.g. a MacBook), it is likely just running slowly - check back in 20 minutes.

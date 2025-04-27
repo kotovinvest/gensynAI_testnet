@@ -158,19 +158,40 @@ def gsm8k_stage_data(
             check_interval=check_interval,
             log_tag=log_tag,
         )
+        logger = logging.getLogger(f"{__name__}:{log_tag}")
+
         rewards = defaultdict(float)
         for outputs in final_stage_outputs:
             for node_key, output in outputs.items():
+                question = output.get("question")
+                faulty_completion = False
+                if question is None:
+                    logger.warning(f"Missing 'question' key in output: {output}")
+                    output["question"] = "<no question available>"
+                    faulty_completion = True
+                stage3_prompt = output.get("stage3_prompt")
+                if stage3_prompt is None:
+                    logger.warning(f"Missing 'stage3_prompt' key in output: {output}")
+                    output["stage3_prompt"] = "<no stage3 prompt available>"
+                    faulty_completion = True
+                final_answer = output.get("final_agent_decision")
+                if final_answer is None:
+                    logger.warning(f"Missing 'final_agent_decision' key in output: {output}")
+                    output["final_agent_decision"] = "<no final agent decision available>"
+                    faulty_completion = True
                 prompts = [
                     [
                         {"role": "system", "content": output["question"]},
                         {"role": "system", "content": output["stage3_prompt"]},
                     ],
                 ]
-                final_answer = next(iter(output["final_agent_decision"].items()))[1]
-                completions = [[{"role": "assistant", "content": final_answer}]]
-                cumulative_reward_2(prompts=prompts, completions=completions, **output)
-                rewards[node_key] += sum(node.rewards)
+                if faulty_completion:
+                    rewards[node_key] += 0.0
+                else:
+                    final_answer = next(iter(output["final_agent_decision"].items()))[1]
+                    completions = [[{"role": "assistant", "content": final_answer}]]
+                    cumulative_reward_2(prompts=prompts, completions=completions, **output)
+                    rewards[node_key] += sum(node.rewards)
 
         rewards = sorted(list(rewards.items()), key=lambda x: x[1], reverse=True)
         return [n for n, _ in rewards][:limit]
