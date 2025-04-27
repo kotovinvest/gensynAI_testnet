@@ -109,13 +109,13 @@ if [ "$CONNECT_TO_TESTNET" = "True" ]; then
     echo "Started server process: $SERVER_PID"
     sleep 5
 
-    if command -v xdg-open >/dev/null 2>&1; then
-        xdg-open http://localhost:3000
-    elif command -v open >/dev/null 2>&1; then
-        open http://localhost:3000
-    else
-        echo ">> Failed to auto-open browser. Please visit http://localhost:3000 manually."
-    fi
+if command -v xdg-open >/dev/null 2>&1; then
+    echo "Modal server started at http://localhost:3000"
+elif command -v open >/dev/null 2>&1; then
+    echo "Modal server started at http://localhost:3000"
+else
+    echo "Modal server started at http://localhost:3000"
+fi
 
     cd ..
 
