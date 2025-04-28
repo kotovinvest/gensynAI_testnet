@@ -48,7 +48,6 @@ If you encounter issues, please first check [Troubleshooting](#troubleshooting).
 
 ## Run the Swarm
 
-
 To start the swarm, run the following commands:
 
 ```sh
@@ -56,7 +55,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 ./run_rl_swarm.sh
 
-**Testnet Participation**
+## Testnet Participation
 
 Please answer **Y** (or just press Enter), **N** is provided as an alternative flow but isn't currently maintained.
 
