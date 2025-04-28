@@ -46,7 +46,7 @@ If you encounter issues, please first check [Troubleshooting](#troubleshooting).
 
 ## Instructions
 
-## Run the Swarm
+### Run the Swarm
 To start the swarm, run the following commands
 
 
