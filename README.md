@@ -47,12 +47,14 @@ If you encounter issues, please first check [Troubleshooting](#troubleshooting).
 ## Instructions
 
 ## Run the Swarm
-To start the swarm, run the following commands:
+To start the swarm, run the following commands
+
 
 ```sh
 python3 -m venv .venv
 source .venv/bin/activate
 ./run_rl_swarm.sh
+
 
 ## Testnet Participation
 
