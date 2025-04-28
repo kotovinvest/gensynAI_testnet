@@ -46,7 +46,7 @@ If you encounter issues, please first check [Troubleshooting](#troubleshooting).
 
 ## Instructions
 
-### Run the Swarm
+## Run the Swarm
 
 
 To start the swarm, run the following commands:
@@ -60,7 +60,7 @@ source .venv/bin/activate
 
 Please answer **Y** (or just press Enter), **N** is provided as an alternative flow but isn't currently maintained.
 
-### Login
+## Login
 
 A browser window will open (you'll need to manually navigate to [http://localhost:3000/](http://localhost:3000/), if you're on a VM).
 
@@ -68,7 +68,7 @@ Click **Login**.
 
 Login with your preferred method.
 
-### Huggingface Integration
+## Huggingface Integration
 
 Optionally pair your HF account by using your HF token - more here.
 
