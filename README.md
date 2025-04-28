@@ -144,7 +144,6 @@ For further support, reach out via Issues or join our community on Discord.
 
 Чтобы запустить swarm, выполните следующие команды:
 
-```sh
 python3 -m venv .venv
 source .venv/bin/activate
 ./run_rl_swarm.sh
