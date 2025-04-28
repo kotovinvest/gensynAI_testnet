@@ -48,6 +48,7 @@ If you encounter issues, please first check [Troubleshooting](#troubleshooting).
 
 ### Run the Swarm
 
+
 To start the swarm, run the following commands:
 
 ```sh
