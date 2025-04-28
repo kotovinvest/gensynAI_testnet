@@ -27,7 +27,7 @@ If you encounter issues, please first check [Troubleshooting](#troubleshooting).
 
 ## Инструкции / Instructions
 
-### Запуск  / Run the swarm
+## Запуск  / Run the swarm
 
 
 ```sh
@@ -36,13 +36,13 @@ source .venv/bin/activate
 ./run_rl_swarm.sh
 
 
-### Участие в тестовой сети / Testnet participation
+## Участие в тестовой сети / Testnet participation
 
 Пожалуйста, ответьте 'Y' (или просто нажмите enter), N предоставлен как альтернативный поток, но в настоящее время не поддерживается.
 
 Please answer 'Y' (or just press enter), N is provided as an alternative flow but isn't currently maintained.
 
-### Вход / Login
+## Вход / Login
 
 1. Откроется окно браузера (вам нужно будет вручную перейти по адресу http://localhost:3000/, если вы находитесь в виртуальной машине).
 2. Нажмите 'login'.
@@ -52,13 +52,13 @@ Please answer 'Y' (or just press enter), N is provided as an alternative flow bu
 2. Click 'login'.
 3. Login with your preferred method.
 
-### Huggingface
+## Huggingface
 
 По желанию можно связать ваш аккаунт HF с помощью вашего HF токена - [подробности здесь](https://huggingface.co/docs/hub/en/security-tokens).
 
 Optionally pair your HF account by using your HF token - [more here](https://huggingface.co/docs/hub/en/security-tokens).
 
-### Первичное соединение и обучение / Initial peering and training
+## Первичное соединение и обучение / Initial peering and training
 
 С этого момента ваше устройство будет использоваться для обучения гипермасштабируемой системы машинного обучения. Вы должны увидеть регистрацию вашего пира и голосование на блокчейне [здесь](https://gensyn-testnet.explorer.alchemy.com/address/0x2fC68a233EF9E9509f034DD551FF90A79a0B8F82?tab=logs).
 
@@ -66,7 +66,7 @@ From this stage onward your device will be used to train a hyperscale machine le
 
 ## Управление идентичностью / Identity management
 
-### Введение / Introduction
+## Введение / Introduction
 
 Идентичность на блокчейне управляется через экран входа Alchemy. Вам нужно указать адрес электронной почты или войти через поддерживаемый метод (например, Google). Это создает публичный/приватный ключ EOA (которые хранятся в Alchemy). Вы также получите локальные ключи сессии в `userApiKey`. Обратите внимание, что это не ваши публичные/приватные ключи EOA.
 
