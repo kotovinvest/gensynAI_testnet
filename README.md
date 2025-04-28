@@ -34,6 +34,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 ./run_rl_swarm.sh
 
+
 ### Участие в тестовой сети / Testnet participation
 
 Пожалуйста, ответьте 'Y' (или просто нажмите enter), N предоставлен как альтернативный поток, но в настоящее время не поддерживается.
