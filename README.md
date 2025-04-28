@@ -48,7 +48,6 @@ If you encounter issues, please first check [Troubleshooting](#troubleshooting).
 To start the swarm, run the following commands
 
 
-```sh
 python3 -m venv .venv
 source .venv/bin/activate
 ./run_rl_swarm.sh
