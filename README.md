@@ -10,6 +10,11 @@
 | **Python Version**                  | Python >= 3.10 (For Mac, you may need to upgrade)           |
 
 
+# Gensyn Protocol
+
+![Gensyn Logo](https://gensyn.ai/images/logo.png)
+
+
 
 ## ⚠️ Пожалуйста, прочитайте перед продолжением ⚠️ / ⚠️ Please read before continuing ⚠️
 
