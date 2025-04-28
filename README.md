@@ -27,7 +27,8 @@ If you encounter issues, please first check [Troubleshooting](#troubleshooting).
 
 ## Инструкции / Instructions
 
-### Запуск роя / Run the swarm
+### Запуск  / Run the swarm
+
 
 ```sh
 python3 -m venv .venv
