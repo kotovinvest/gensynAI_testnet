@@ -23,7 +23,7 @@ This software is **experimental** and provided *as-is* for users who are interes
 If you care about *on-chain participation*, you **must** read the [Identity Management](#identity-management) section below.
 
 If you encounter issues, please first check [Troubleshooting](#troubleshooting). If you cannot find a solution, check for an open (or closed) [Issue](../../issues). If no relevant issue exists, file a new one and include:
-1. All relevant logs
+1. All relevant logs.
 2. Information about your device (e.g., GPU, if applicable)
 3. Your operating system details
 
